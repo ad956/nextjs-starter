@@ -6,6 +6,7 @@ export default function Home() {
       <h1>NextJS Application Starter</h1>
 
       <Link href="/about">AboutPage</Link>
+      <Link href="/users">UsersPage</Link>
     </main>
   );
 }
