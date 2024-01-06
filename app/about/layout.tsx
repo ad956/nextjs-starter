@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+import styles from "./styles.module.css";
+
+export const metadata: Metadata = {
+  title: "About Page",
+  description: "This is a about page",
+};
+
 export default function AboutLayout({
   children,
 }: {
@@ -6,7 +14,7 @@ export default function AboutLayout({
   return (
     <>
       <nav>About Navbar</nav>
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
     </>
   );
 }
