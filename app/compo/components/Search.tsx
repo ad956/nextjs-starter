@@ -12,7 +12,7 @@ export default function Search() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSearch("");
-    router.push(`/${search}/`);
+    router.push(`/compo/${search}`);
   };
 
   return (
