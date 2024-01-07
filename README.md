@@ -16,6 +16,10 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+# Pexels API Integration for Image Search
+
+This Next.js project utilizes the Pexels API to seamlessly fetch and display images based on search queries. The integration adds a dynamic and visually appealing aspect to the project, allowing users to access a wide variety of high-quality images.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
