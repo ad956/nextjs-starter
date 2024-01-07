@@ -11,15 +11,14 @@ type Params = {
   };
 };
 
-// export const metadata: Metadata = genrateMetaData();
+// export const metadata: Metadata = generateMetaData();
 
 // dynamic metadata
-export async function genrateMetaData({
+export async function generateMetadata({
   params: { userId },
 }: Params): Promise<Metadata> {
   // OP feature of NextJS : the above request will be de-duped means the next will call the below line only omce even if its called multiple times
   const userData: Promise<User> = getUser(userId);
-
   const user = await userData;
 
   return { title: user.name, description: `This is ${user.name} page` };
