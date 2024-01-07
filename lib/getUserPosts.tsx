@@ -44,7 +44,11 @@ export default async function getUserPosts(userId: string) {
 
   */
 
-  if (!res.ok) throw new Error("Fetching Posts of User failed");
+  // if (!res.ok) throw new Error("Fetching Posts of User failed");
+
+  // used when working with dynamicParams and notFound() from next/navigation
+  if (!res.ok) return undefined;
+
   return res.json();
 }
 
