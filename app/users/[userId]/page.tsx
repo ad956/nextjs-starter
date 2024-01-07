@@ -15,6 +15,7 @@ type Params = {
 
 // dynamic metadata
 export async function generateMetadata({
+  // generateMetadata is the correct name to be used
   params: { userId },
 }: Params): Promise<Metadata> {
   // OP feature of NextJS : the above request will be de-duped means the next will call the below line only omce even if its called multiple times
