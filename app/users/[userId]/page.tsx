@@ -34,7 +34,6 @@ export default async function UserPage({ params: { userId } }: Params) {
 
   // to use suspense, loading state , using below approach
   const user = await userData;
-
   return (
     <>
       <h2>{user.name}</h2>
