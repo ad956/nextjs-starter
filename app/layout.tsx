@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="flex flex-col items-center justify-between p-24">
+        <nav className="flex flex-col items-center justify-between p-10">
           <ul className="flex  gap-5">
             <Link href="/about">AboutPage</Link>
             <Link href="/users">UsersPage</Link>
