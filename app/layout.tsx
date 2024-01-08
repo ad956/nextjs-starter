@@ -25,6 +25,7 @@ export default function RootLayout({
             <Link href="/about">AboutPage</Link>
             <Link href="/users">UsersPage</Link>
             <Link href="/compo">Components Demo</Link>
+            <Link href="/blog">Blog</Link>
           </ul>
         </nav>
         {children}
