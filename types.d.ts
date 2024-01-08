@@ -59,3 +59,9 @@ type Pexels = {
   total_results: number;
   next_page: string;
 };
+
+type BlogPost = {
+  id: string;
+  title: string;
+  date: string;
+};
