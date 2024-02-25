@@ -20,7 +20,7 @@ export async function generateMetadata({
   // generateMetadata is the correct name to be used
   params: { userId },
 }: Params): Promise<Metadata> {
-  // OP feature of NextJS : the above request will be de-duped means the next will call the below line only omce even if its called multiple times
+  // OP feature of NextJS : the above request will be de-duped means the next will call the below line only once even if its called multiple times
   const userData: Promise<User> = getUser(userId);
   const user: User = await userData;
 
